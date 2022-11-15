@@ -52,3 +52,14 @@ h1 {
   height: 15px;
   width: 30px;
 }
+
+/* Opsomming landen verdelen over 3 kolommen*/
+ul{
+  -webkit-column-count: 4;
+  -moz-column-count: 4;
+  column-count: 4;
+}
+
+.country-list {
+  background-color: beige;
+}

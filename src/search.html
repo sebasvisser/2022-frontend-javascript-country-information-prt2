@@ -2,10 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>
-        Title</title>
+    <title>Search Page</title>
+
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer type="module" src="./search.js"></script>
 </head>
 <body>
-
+<div id="container" class="container">
+    <div id="item-left" class="item"></div>
+    <div id="item-center" class="item-center">
+<label for="searchcountry">Voer landnaam in</label>
+<input type="text" id="searchcountry" name="searchcountry"><br><br>
+<input type="submit" id="searchButton" value="Zoek Land Op">
+<p id="searchResult">Result</p>
+    </div>
+    <div id="item-right" class="item"></div>
+</div>
 </body>
 </html>

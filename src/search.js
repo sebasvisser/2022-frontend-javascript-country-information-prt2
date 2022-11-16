@@ -50,8 +50,7 @@ async function getCountryDataOnSearch() {
         countryName.textContent = nameCountry;
 // zinnetje
         const countryPopulation = document.createElement("p");
-        countryPopulation.textContent = `${nameCountry} is situated in ${subareaCountry}. It has a population of ${populationCountry}. \r\n`;
-        countryPopulation.textContent += `The capital is ${capitalCountry} and you can pay with ${currenciesCountry}.`;
+        countryPopulation.innerText = `${nameCountry} is situated in ${subareaCountry}. It has a population of ${populationCountry}. \r\n The capital is ${capitalCountry} and you can pay with ${currenciesCountry}.`;
 
         // alles plaatsen op de plek van results
         result.append(item);

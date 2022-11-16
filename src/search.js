@@ -69,7 +69,11 @@ async function getCountryDataOnSearch() {
         searchField.value = "";
     }
     catch (error) {
+        const errorMessage = document.createElement("p");
+        errorMessage.innerText = "DIT GAAT FOUT";
+        result.append(errorMessage);
         console.error(error);
+        searchField.value = "";
     }
 }
 

@@ -64,6 +64,9 @@ async function getCountryDataOnSearch() {
         item.append(searchCountryFlag);
         item.append(countryName);
         item.append(countryPopulation);
+
+        // Search field leeg maken
+        searchField.value = "";
     }
     catch (error) {
         console.error(error);

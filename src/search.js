@@ -6,6 +6,13 @@ searchButton.addEventListener('click',getCountryDataOnSearch);
 
 const result = document.getElementById("searchResult");
 
+const searchField = document.getElementById("searchcountry");
+searchField.addEventListener("keypress", function (e) {
+    if (e.code === "Enter") {
+        getCountryDataOnSearch();
+    }
+});
+
 async function getCountryDataOnSearch() {
     try{
 
